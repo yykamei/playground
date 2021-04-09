@@ -2,8 +2,13 @@
 
 set -euxo pipefail
 
-VAR='abc !!! ```kdf'
-
 echo start
-echo "::set-output name=MY_OUTPUT::${VAR}"
+
+(
+echo bac
+echo kd
+echo '!!'
+) | tee out.txt
+
+echo "::set-output name=MY_OUTPUT::$(cat out.txt)"
 echo end
