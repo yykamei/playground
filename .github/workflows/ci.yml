@@ -16,4 +16,4 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const script = require(`${process.env.GITHUB_WORKSPACE}/script.js`)
-            script()
+            script('${{ steps.passwd.outputs.OUTPUT }}')

@@ -1,4 +1,4 @@
-module.exports = () => {
-  const output = `${{ steps.passwd.outputs.OUTPUT }}`
+module.exports = (output) => {
   console.log('TEST')
+  console.log(output)
 }
