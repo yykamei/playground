@@ -13,5 +13,5 @@ jobs:
         run: ./script.sh
       - run: |
           echo 'stdout: ${{ steps.script.outputs.stdout }}'
-          echo '${{ steps.script.outputs.MY_OUTPUT }}'
+          echo 'MY_OUTPUT: ${{ steps.script.outputs.MY_OUTPUT }}'
 
