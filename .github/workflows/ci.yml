@@ -10,7 +10,7 @@ jobs:
       - uses: actions/checkout@v2
       - id: passwd
         run: |
-          echo "::set-output name=OUTPUT::$(jq --raw-input --slurp /etc/passwd)"
+          echo "::set-output name=OUTPUT::$(jq --raw-input --slurp < /etc/passwd)"
       - uses: actions/github-script@v3
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
