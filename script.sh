@@ -10,5 +10,5 @@ echo kd
 echo '!!'
 ) | tee out.txt
 
-echo "::set-output name=MY_OUTPUT::$(cat out.txt)"
+OK="::set-output name=MY_OUTPUT::$(cat out.txt)"
 echo end
