@@ -8,5 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: ./script.sh '${{ github.workspace }}'
+      - run: ./script.sh "$PWD"
         working-directory: ./dev
