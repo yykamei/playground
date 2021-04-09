@@ -12,5 +12,6 @@ jobs:
       - id: script
         run: ./script.sh
       - run: |
+          echo 'stdout: ${{ steps.script.outputs.stdout }}'
           echo '${{ steps.script.outputs.MY_OUTPUT }}'
 
