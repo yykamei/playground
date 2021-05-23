@@ -15,4 +15,6 @@ jobs:
       - run: |
           version="v$(cat VERSION)"
           gh release create $version --notes '${{ github.event.inputs.release_note }}'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
