@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: githubchangeloggenerator/github-changelog-generator:1.16.2
+      - uses: docker://githubchangeloggenerator/github-changelog-generator:1.16.2
         with:
           args: '--user yykamei --project playground'
         env:
