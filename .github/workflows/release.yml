@@ -12,9 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: |
-          version="v$(cat VERSION)"
-          gh release create $version --notes '${{ github.event.inputs.release_note }}'
+      - uses: docker://githubchangeloggenerator/github-changelog-generator:1.16.2
+        with:
+          args: '--user yykamei --project playground'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+          CHANGELOG_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: cat CHANGELOG.md
