@@ -14,15 +14,6 @@ jobs:
       - uses: actions/checkout@v2
       - uses: githubchangeloggenerator/github-changelog-generator:1.16.2
         with:
-          args: ['--user', 'yykamei', '--project', 'playground']
+          args: '--user yykamei --project playground'
         env:
           CHANGELOG_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - run: cat CHANGELOG.md
-      # - run: |
-      #     githubchangeloggenerator/github-changelog-generator
-      #     version="v$(cat VERSION)"
-      #     gh release create $version --notes '${{ github.event.inputs.release_note }}'
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
