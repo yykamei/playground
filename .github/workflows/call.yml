@@ -1,0 +1,26 @@
+name: Call checklist
+on:
+  issue_comment:
+    types: [created, edited]
+jobs:
+  checklist:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.issue.pull_request }}
+    steps:
+      - uses: actions/github-script@v4
+        id: set-result
+        with:
+          script: |
+            if (!new RegExp('^/checklist[^\S\r\n]+HAHAHA').test(context.payload.comment.body)) {
+              process.exit()
+            }
+            const body = [
+              '- [ ] OK?',
+              '- [ ] HAHAHA',
+            ].join('\n')
+            github.issue.updateComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              comment_id: context.payload.comment.id,
+              body,
+            })
