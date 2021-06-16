@@ -18,7 +18,7 @@ jobs:
               '- [ ] OK?',
               '- [ ] HAHAHA',
             ].join('\n')
-            github.issue.updateComment({
+            github.issues.updateComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
               comment_id: context.payload.comment.id,
