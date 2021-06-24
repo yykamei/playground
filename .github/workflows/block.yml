@@ -1,13 +1,13 @@
 name: Block Merge Based on Time
 on:
-#  pull_request:
-#    types:
-#      - opened
-#      - synchronize
-#      - reopened
-#      - labeled
   schedule:
     - cron: "* * * * *"
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+      - labeled
 
 jobs:
   block:
