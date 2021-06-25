@@ -18,5 +18,6 @@ jobs:
         with:
           after: 17:30
           before: 06:00
+          prohibited-days-dates: Sunday, Saturday
           timezone: Asia/Tokyo
 
