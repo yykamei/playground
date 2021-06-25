@@ -16,6 +16,7 @@ jobs:
     steps:
       - uses: yykamei/block-merge-based-on-time@debug
         with:
-          after: 06:30
-          before: 09:00
+          after: 17:30
+          before: 06:00
           timezone: Asia/Tokyo
+
