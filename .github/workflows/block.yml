@@ -7,17 +7,16 @@ on:
       - reopened
       - labeled
   workflow_dispatch:
-#  schedule:
-#    - cron: '* * * * *'
+  schedule:
+    - cron: '* * * * *'
 
 jobs:
   block:
     runs-on: ubuntu-latest
     steps:
-      - uses: yykamei/block-merge-based-on-time@debug
+      - uses: yykamei/block-merge-based-on-time@main
         with:
           after: 17:30
-          before: 06:00
-          prohibited-days-dates: "2021-06-26"
+          before: 09:00
           timezone: Asia/Tokyo
 
