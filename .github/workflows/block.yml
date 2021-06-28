@@ -8,7 +8,7 @@ on:
       - labeled
   workflow_dispatch:
   schedule:
-    - cron: '* * * * *'
+    - cron: '*/30 * * * *'
 
 jobs:
   block:
