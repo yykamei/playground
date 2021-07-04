@@ -18,5 +18,5 @@ jobs:
           after: 17:30
           before: 09:00
           timezone: Asia/Tokyo
-          prohibited-days-dates: "2021-07-05/2021-07/07"
+          prohibited-days-dates: "2021-07-05/2021-07-07"
 
