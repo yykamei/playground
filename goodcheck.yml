@@ -1,21 +1,20 @@
 rules:
   - id: yykamei.special
     pattern: special
-    glob: "**/*.rb"
     message: |
       Please don't use the term "special."
 
   - id: yykamei.current_user
-    pattern: @current_user
+    pattern: "@current_user"
     glob: "app/models/**/*.rb"
     message: |
-      Please don't use the term "@current_user" within models.
+      Please don't use "@current_user" within models.
 
   - id: yykamei.db_schema
     glob: db/schema.rb
     message: |
       Please follow the steps below to ensure applying changes to the database safely:
-      
+
       1. foo
       2. bar
       3. ...
@@ -38,5 +37,6 @@ exclude:
   - "**/node_modules"
   - "**/vendor"
   - "**/yarn.lock"
+  - "**/*.swp"
 
 exclude_binary: true
