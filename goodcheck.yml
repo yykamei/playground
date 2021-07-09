@@ -1,0 +1,42 @@
+rules:
+  - id: yykamei.special
+    pattern: special
+    glob: "**/*.rb"
+    message: |
+      Please don't use the term "special."
+
+  - id: yykamei.current_user
+    pattern: @current_user
+    glob: "app/models/**/*.rb"
+    message: |
+      Please don't use the term "@current_user" within models.
+
+  - id: yykamei.db_schema
+    glob: db/schema.rb
+    message: |
+      Please follow the steps below to ensure applying changes to the database safely:
+      
+      1. foo
+      2. bar
+      3. ...
+
+  - id: yykamei.kk_foo
+    pattern: 株式会社Foo
+    message: |
+      我々の会社は後株です。
+    fail: 株式会社Foo
+    pass: Foo株式会社
+    justification:
+      - 我々の会社ではない「株式会社Foo」を示している場合
+
+import:
+  - https://github.com/sider/goodcheck-rules/archive/refs/tags/v0.0.1.tar.gz
+
+exclude:
+  - "**/build"
+  - "**/coverage"
+  - "**/node_modules"
+  - "**/vendor"
+  - "**/yarn.lock"
+
+exclude_binary: true
