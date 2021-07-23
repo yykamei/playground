@@ -20,6 +20,6 @@ jobs:
           after: 17:30
           before: 09:00
           timezone: Asia/Tokyo
-          base-branches: "(default)"
+          base-branches: "(default), /^feature\\/.*/"
           prohibited-days-dates: "2021-07-05/2021-07-07"
 
