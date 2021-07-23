@@ -4,10 +4,11 @@ on:
     types:
       - opened
       - reopened
+      - synchronize
       - labeled
   workflow_dispatch:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '*/15 * * * *'
 
 jobs:
   block:
