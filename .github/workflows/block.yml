@@ -21,5 +21,4 @@ jobs:
           before: 09:00
           timezone: Asia/Tokyo
           base-branches: "(default), /^feature\\/.*/"
-          prohibited-days-dates: "2021-07-05/2021-07-07"
-
+          prohibited-days-dates: "Sunday, Saturday"
