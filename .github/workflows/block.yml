@@ -8,8 +8,8 @@ on:
       - labeled
       - unlabeled
   workflow_dispatch:
-  schedule:
-    - cron: '*/15 * * * *'
+#  schedule:
+#    - cron: '*/15 * * * *'
 
 jobs:
   block:
@@ -17,7 +17,7 @@ jobs:
     steps:
       - uses: yykamei/block-merge-based-on-time@main
         with:
-          after: 17:30
+          after: 23:30
           before: 09:00
           timezone: Asia/Tokyo
           base-branches: "(default), /^feature\\/.*/"
