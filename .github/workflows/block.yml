@@ -15,7 +15,7 @@ jobs:
   block:
     runs-on: ubuntu-latest
     steps:
-      - uses: yykamei/block-merge-based-on-time@main
+      - uses: yykamei/block-merge-based-on-time@explicit-await
         with:
           after: 17:30
           before: 09:00
