@@ -3,7 +3,7 @@ name: Release
 on:
   workflow_dispatch:
     inputs:
-      tag:
+      tag_name:
         description: tag
         required: true
   release:
