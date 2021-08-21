@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/rubocop/rubocop
-  revision: 95f75baceb5bbfb8ecb2b2b4b14fb4a7145b6f0c
-  tag: v1.16.0
+  revision: 9cdedfd1e8521c1be671556135e02ad87ae9d888
+  tag: v1.17.0
   specs:
-    rubocop (1.16.0)
+    rubocop (1.17.0)
       parallel (~> 1.10)
       parser (>= 3.0.0.0)
       rainbow (>= 2.2.2, < 4.0)
