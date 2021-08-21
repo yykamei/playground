@@ -1,15 +1,15 @@
 GIT
   remote: https://github.com/rubocop/rubocop
-  revision: 95f75baceb5bbfb8ecb2b2b4b14fb4a7145b6f0c
-  tag: v1.16.0
+  revision: ba6c4729e38bd9bbc296ba7db84d608389a1892c
+  tag: v1.19.1
   specs:
-    rubocop (1.16.0)
+    rubocop (1.19.1)
       parallel (~> 1.10)
       parser (>= 3.0.0.0)
       rainbow (>= 2.2.2, < 4.0)
       regexp_parser (>= 1.8, < 3.0)
       rexml
-      rubocop-ast (>= 1.7.0, < 2.0)
+      rubocop-ast (>= 1.9.1, < 2.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (>= 1.4.0, < 3.0)
 
