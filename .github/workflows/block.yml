@@ -15,7 +15,7 @@ jobs:
   block:
     runs-on: ubuntu-latest
     steps:
-      - uses: yykamei/block-merge-based-on-time@main
+      - uses: yykamei/block-merge-based-on-time@dependabot/npm_and_yarn/vercel/ncc-0.31.0
         with:
           after: 17:30
           before: 09:00
