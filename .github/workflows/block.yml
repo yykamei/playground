@@ -19,4 +19,4 @@ jobs:
         with:
           timezone: Asia/Tokyo
           base-branches: "(default), /^feature\\/.*/"
-          prohibited-days-dates: "Sunday, Saturday, Tuesday"
+          prohibited-days-dates: "Sunday, Saturday"
