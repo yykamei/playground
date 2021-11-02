@@ -15,7 +15,7 @@ jobs:
   block:
     runs-on: ubuntu-latest
     steps:
-      - uses: yykamei/block-merge-based-on-time@make-before-and-after-optional
+      - uses: yykamei/block-merge-based-on-time@main
         with:
           timezone: Asia/Tokyo
           base-branches: "(default), /^feature\\/.*/"
