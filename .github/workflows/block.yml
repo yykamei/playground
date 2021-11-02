@@ -17,8 +17,6 @@ jobs:
     steps:
       - uses: yykamei/block-merge-based-on-time@make-before-and-after-optional
         with:
-          after: 17:30
-          before: 09:00
           timezone: Asia/Tokyo
           base-branches: "(default), /^feature\\/.*/"
-          prohibited-days-dates: "Sunday, Saturday"
+          prohibited-days-dates: "Sunday, Saturday, Tuesday"
