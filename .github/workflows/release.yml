@@ -17,9 +17,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo ${{ github.event.inputs.apply }}
-      - uses: yykamei/actions-release-actions@main
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          tag: v${{ github.event.inputs.version }}
-          title: Release v${{ github.event.inputs.version }}
-          apply: ${{ github.event.inputs.apply }}
+      - run: echo Hello
+        if: github.event.inputs.apply
+      - run: if [[ '${{ inputs.apply }}' == "true" ]]; then echo APPLY; fi
