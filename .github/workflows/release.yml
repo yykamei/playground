@@ -19,4 +19,4 @@ jobs:
       - run: echo ${{ github.event.inputs.apply }}
       - run: echo Hello
         if: github.event.inputs.apply
-      - run: if [[ '${{ inputs.apply }}' == "true" ]]; then echo APPLY; fi
+      - run: if [[ '${{ github.event.inputs.apply }}' == "true" ]]; then echo APPLY; fi
