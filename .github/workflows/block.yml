@@ -8,8 +8,8 @@ on:
       - labeled
       - unlabeled
   workflow_dispatch:
-  schedule:
-    - cron: '*/15 * * * *'
+#  schedule:
+#    - cron: '*/15 * * * *'
 
 jobs:
   block:
